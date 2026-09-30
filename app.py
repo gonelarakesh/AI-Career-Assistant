@@ -7,7 +7,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet
 import tempfile
 
-client = genai.Client(api_key="YOUR_REAL_API_KEY")
+client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 
 st.title("Resume Analyzer")
 st.write("Welcome to Resume Analyzer Project")
